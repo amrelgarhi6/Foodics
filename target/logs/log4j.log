@@ -1,0 +1,996 @@
+[INFO ] 2023-11-08 06:39:19.798 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    Powered by [1mSHAFT v.7.3.20230926[22m                                                    
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:20.874 [main] ReportManager - Loaded OpenCV "opencv_java470".
+[INFO ] 2023-11-08 06:39:20.875 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2023-11-08 06:39:21.091 [main] ReportManager - Initializing Summary Reporting Environment...
+[INFO ] 2023-11-08 06:39:21.385 [main] Utils - [TestNG] Running:
+  C:\Users\AS\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
+[INFO ] 2023-11-08 06:39:21.421 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:21.586 [main] ReportManager - Initializing Important Links...
+[INFO ] 2023-11-08 06:39:21.596 [main] ReportManager - Initializing Properties...
+[INFO ] 2023-11-08 06:39:21.745 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                          Starting execution of load response body configuration method                                          
+                                                        'base.ApiTests.loadResponseBody'                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:22.803 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 6' test cases in the current suite                                        
+                                           Test Method: 'base.ApiTests.testCustomerLoginSuccessfully'                                           
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[DEBUG] 2023-11-08 06:39:24.486 [main] BasicClientConnectionManager - Get connection for route {s}->https://pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:24.579 [main] DefaultClientConnectionOperator - Connecting to pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:25.074 [main] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-11-08 06:39:25.076 [main] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-11-08 06:39:25.076 [main] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:25.077 [main] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:25.077 [main] DefaultClientConnection - Sending request: POST /cp_internal/login HTTP/1.1
+[DEBUG] 2023-11-08 06:39:25.078 [main] wire -  >> "POST /cp_internal/login HTTP/1.1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.079 [main] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.079 [main] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.079 [main] wire -  >> "Content-Length: 101[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.079 [main] wire -  >> "Host: pay2.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.079 [main] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.080 [main] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.080 [main] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.080 [main] wire -  >> "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.080 [main] headers - >> POST /cp_internal/login HTTP/1.1
+[DEBUG] 2023-11-08 06:39:25.080 [main] headers - >> Accept: */*
+[DEBUG] 2023-11-08 06:39:25.080 [main] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:25.080 [main] headers - >> Content-Length: 101
+[DEBUG] 2023-11-08 06:39:25.080 [main] headers - >> Host: pay2.foodics.dev
+[DEBUG] 2023-11-08 06:39:25.080 [main] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-11-08 06:39:25.080 [main] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+[DEBUG] 2023-11-08 06:39:25.081 [main] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-11-08 06:39:25.081 [main] wire -  >> "{"email": "merchant@foodics.com",[\n]"
+[DEBUG] 2023-11-08 06:39:25.081 [main] wire -  >> ""password": "123456",[\n]"
+[DEBUG] 2023-11-08 06:39:25.081 [main] wire -  >> ""token": "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO"[\n]"
+[DEBUG] 2023-11-08 06:39:25.081 [main] wire -  >> "}"
+[DEBUG] 2023-11-08 06:39:25.550 [main] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "Date: Wed, 08 Nov 2023 04:39:25 GMT[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "Content-Type: application/json[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "vary: Accept-Encoding[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "Cache-Control: no-cache, private[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "x-ratelimit-limit: 60[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.552 [main] wire -  << "x-ratelimit-remaining: 59[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "x-content-type-options: nosniff[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=j8plUCY398eD38yyvMD3%2FtHri29b9DfRSVdmuL4JHxOea9nDVqC9rzX3SERFtCzhw4ZQ3jUzMqgvf8ofZRy5VVusaFEhLB%2B%2FseiJxQrHo8m8tHMgBu2MwA7bYNC5kN6vFOMP"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "Strict-Transport-Security: max-age=7776000; includeSubDomains; preload[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.553 [main] wire -  << "CF-RAY: 822b21cdff2e41c4-MRS[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.554 [main] wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.554 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.554 [main] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << Date: Wed, 08 Nov 2023 04:39:25 GMT
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << Content-Type: application/json
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << Transfer-Encoding: chunked
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << Connection: keep-alive
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << vary: Accept-Encoding
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << Cache-Control: no-cache, private
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << x-ratelimit-limit: 60
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << x-ratelimit-remaining: 59
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << access-control-allow-origin: *
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << x-frame-options: SAMEORIGIN
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << x-xss-protection: 1; mode=block
+[DEBUG] 2023-11-08 06:39:25.555 [main] headers - << x-content-type-options: nosniff
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << Content-Encoding: gzip
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << CF-Cache-Status: DYNAMIC
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=j8plUCY398eD38yyvMD3%2FtHri29b9DfRSVdmuL4JHxOea9nDVqC9rzX3SERFtCzhw4ZQ3jUzMqgvf8ofZRy5VVusaFEhLB%2B%2FseiJxQrHo8m8tHMgBu2MwA7bYNC5kN6vFOMP"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << Strict-Transport-Security: max-age=7776000; includeSubDomains; preload
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << Server: cloudflare
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << CF-RAY: 822b21cdff2e41c4-MRS
+[DEBUG] 2023-11-08 06:39:25.556 [main] headers - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 2023-11-08 06:39:25.574 [main] RestAssuredHttpBuilder - Parsing response as: application/json
+[DEBUG] 2023-11-08 06:39:25.575 [main] wire -  << "4d[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.575 [main] wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*[0xc9][0xcf]N[0xcd]S[0xb2]R2166[0xae]17[0xb2]0[0xf1]0[0xf1][0xaf][0xf2][0xb4]4.3[\r][0xae][\n]"
+[DEBUG] 2023-11-08 06:39:25.575 [main] wire -  << "[0xf5]t7[0xb4][0xc8]N3[0x8b]*[0xf5][0xf5][0xe]MO[0xaf]L.[0xcf][0xc8]M[0xc]u[0xe]sU[0xaa][0x5][0x0][0xbd][0x15][[0xb6]9[0x0][0x0][0x0]"
+[DEBUG] 2023-11-08 06:39:25.575 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.575 [main] wire -  << "0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.575 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:25.576 [main] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-11-08 06:39:25.635 [main] ReportManager - Response status code: "200", status line: "HTTP/1.1 200 OK"
+[INFO ] 2023-11-08 06:39:25.679 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-11-08 06:39:25.748 [main] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@c50503e
+[DEBUG] 2023-11-08 06:39:25.748 [main] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-11-08 06:39:26.903 [main] ReportManager - Successfully created attachment 'API Request - Specifications'
+[DEBUG] 2023-11-08 06:39:27.352 [main] cache - Couldn't find template in cache for "codeblock.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-11-08 06:39:27.353 [main] cache - TemplateLoader.findTemplateSource("codeblock_en_GB.ftl"): Not found
+[DEBUG] 2023-11-08 06:39:27.355 [main] cache - TemplateLoader.findTemplateSource("codeblock_en.ftl"): Not found
+[DEBUG] 2023-11-08 06:39:27.356 [main] cache - TemplateLoader.findTemplateSource("codeblock.ftl"): Found
+[DEBUG] 2023-11-08 06:39:27.357 [main] cache - Loading template for "codeblock.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/AS/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/markup/codeblock.ftl"
+[DEBUG] 2023-11-08 06:39:27.623 [main] cache - Couldn't find template in cache for "codeblock.json.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-11-08 06:39:27.623 [main] cache - TemplateLoader.findTemplateSource("codeblock.json_en_GB.ftl"): Not found
+[DEBUG] 2023-11-08 06:39:27.624 [main] cache - TemplateLoader.findTemplateSource("codeblock.json_en.ftl"): Not found
+[DEBUG] 2023-11-08 06:39:27.624 [main] cache - TemplateLoader.findTemplateSource("codeblock.json.ftl"): Found
+[DEBUG] 2023-11-08 06:39:27.624 [main] cache - Loading template for "codeblock.json.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/AS/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/markup/codeblock.json.ftl"
+[INFO ] 2023-11-08 06:39:27.667 [main] ReportManager - Successfully created attachment 'API Request - JSON Body'
+[INFO ] 2023-11-08 06:39:27.669 [main] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-11-08 06:39:27.730 [main] ReportManager - {
+[INFO ] 2023-11-08 06:39:27.730 [main] ReportManager -     "token": "4333|7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE"
+[INFO ] 2023-11-08 06:39:27.731 [main] ReportManager - }
+[INFO ] 2023-11-08 06:39:27.732 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:27.735 [main] ReportManager - Expected "application/json", and actual "application/json"
+[INFO ] 2023-11-08 06:39:27.739 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "application/json" and Actual "application/json". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:27.757 [main] ReportManager - Expected "null", and actual "4333|7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE"
+[INFO ] 2023-11-08 06:39:27.758 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "null" and Actual "4333|7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE". Comparison Type "EQUALS". Validation Type "NEGATIVE".
+[INFO ] 2023-11-08 06:39:27.774 [main] ReportManager - Token is >>>7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE
+[INFO ] 2023-11-08 06:39:27.790 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: testCustomerLoginSuccessfully'
+[INFO ] 2023-11-08 06:39:27.791 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                Finished Execution of Test Method: 'base.ApiTests.testCustomerLoginSuccessfully'                                
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:27.814 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                          Starting execution of load response body configuration method                                          
+                                                        'base.ApiTests.loadResponseBody'                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:27.819 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 6' test cases in the current suite                                        
+                                        Test Method: 'base.ApiTests.testSendGetCustomerInfoSuccessfully'                                        
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[DEBUG] 2023-11-08 06:39:27.852 [main] BasicClientConnectionManager - Get connection for route {s}->https://pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:27.852 [main] DefaultClientConnectionOperator - Connecting to pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:28.015 [main] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-11-08 06:39:28.016 [main] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-11-08 06:39:28.016 [main] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:28.016 [main] DefaultClientConnection - Sending request: GET /cp_internal/whoami HTTP/1.1
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "GET /cp_internal/whoami HTTP/1.1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "Authorization: Bearer 7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "Host: pay2.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.016 [main] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.017 [main] wire -  >> "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> GET /cp_internal/whoami HTTP/1.1
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> Authorization: Bearer 7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> Accept: */*
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> Host: pay2.foodics.dev
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+[DEBUG] 2023-11-08 06:39:28.017 [main] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-11-08 06:39:28.349 [main] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.349 [main] wire -  << "Date: Wed, 08 Nov 2023 04:39:28 GMT[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "Content-Type: application/json[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "vary: Accept-Encoding[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "Cache-Control: no-cache, private[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "x-ratelimit-limit: 60[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "x-ratelimit-remaining: 59[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.350 [main] wire -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.351 [main] wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.351 [main] wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.351 [main] wire -  << "x-content-type-options: nosniff[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.352 [main] wire -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.352 [main] wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.352 [main] wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2107u8wsiK6RlUwn3jflL1uWKcaBIeAbMfMa448lwTiKJnFmKZaJdguj0z0TCzSL3PW5TXYhLmhFobN5y32snXV3bAy2ZLbIWv2joqAxLVdV%2F%2BcfXAvat%2FkceSYHSAW7iGXV"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.352 [main] wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.352 [main] wire -  << "Strict-Transport-Security: max-age=7776000; includeSubDomains; preload[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.352 [main] wire -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.353 [main] wire -  << "CF-RAY: 822b21e059fd5fb2-MRS[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.353 [main] wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.353 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.353 [main] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:28.353 [main] headers - << HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:28.353 [main] headers - << Date: Wed, 08 Nov 2023 04:39:28 GMT
+[DEBUG] 2023-11-08 06:39:28.353 [main] headers - << Content-Type: application/json
+[DEBUG] 2023-11-08 06:39:28.353 [main] headers - << Transfer-Encoding: chunked
+[DEBUG] 2023-11-08 06:39:28.353 [main] headers - << Connection: keep-alive
+[DEBUG] 2023-11-08 06:39:28.353 [main] headers - << vary: Accept-Encoding
+[DEBUG] 2023-11-08 06:39:28.353 [main] headers - << Cache-Control: no-cache, private
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << x-ratelimit-limit: 60
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << x-ratelimit-remaining: 59
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << access-control-allow-origin: *
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << x-frame-options: SAMEORIGIN
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << x-xss-protection: 1; mode=block
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << x-content-type-options: nosniff
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << Content-Encoding: gzip
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << CF-Cache-Status: DYNAMIC
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2107u8wsiK6RlUwn3jflL1uWKcaBIeAbMfMa448lwTiKJnFmKZaJdguj0z0TCzSL3PW5TXYhLmhFobN5y32snXV3bAy2ZLbIWv2joqAxLVdV%2F%2BcfXAvat%2FkceSYHSAW7iGXV"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << Strict-Transport-Security: max-age=7776000; includeSubDomains; preload
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << Server: cloudflare
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << CF-RAY: 822b21e059fd5fb2-MRS
+[DEBUG] 2023-11-08 06:39:28.354 [main] headers - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 2023-11-08 06:39:28.355 [main] RestAssuredHttpBuilder - Parsing response as: application/json
+[DEBUG] 2023-11-08 06:39:28.355 [main] wire -  << "2bb[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.355 [main] wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]uT[0xdb]j[0xdc]0[0x10][0xfd][0x95]E[0xcf]q[0x90]l[0xaf]-[0xfb][0xa9][0x90][0xb6]PJ[0xc9]C[0xfa][0xd2]R0[0xb2]-oDd[0xc9][0x95][0xe4][0xb4]i[0xd8][0xef][0x8c][0xbc][0x17]o[0xc8][0x9a]E,s[0xd1][0xcc][0x9c]sF[0xaf]d[0xf6][0xd2][0x91][0xfa][0x95]X[0xd3]Z[0xe1][0xfa][0xc6][0xc9][0xdf][0xb3][0xf4][0x81][0xd4]f[0xd6][0xfa][0x86][0x8c][0xd2]u[0x8f][0xc2][0x84][0x18][0xe2]z[0x8c]][0x1c][0xaa]'5)z[0x9a][0xa7][0x99][0xe4]I[0x99][0xb6]U[0x92][0xf7]i[0x91][0x8]*[0xb2][0xa4][0xe3][0xd9]6[0xe7]e[0xc6][0x99][0xd8][0x92][0x1b][0xe2][0xe4] [0x9d]4[0x9d][0x84][0x94]o[0x9f](~[0xc][0xcc][0xed][0xec][0x95][0x91][0xde]7[0xe1]e[0x2]W[0xba][0xb2][0xac]3X[0xfc] [0xde][m[0x1b][0xac][0xbb]tp[\n]"
+[DEBUG] 2023-11-08 06:39:28.355 [main] wire -  << "6b[0xc4][0xb8][0xcf][0xf7][0xf7][0x1f][0xbf][0xdc]=[0x90]7[0x9e]F[0xdb]Nh[0xf5]Ob[0xc3][0xbf]fZ[0xe4],[0x9e][0x1c][0xcf]t[0x88][0xff]3<[0xb3][0xc]R;;[0xe2][0xc8]Jh[0xe8]a[0xa7]|p"(k 5[0xa5][F[0xf3][\n]"
+[DEBUG] 2023-11-08 06:39:28.355 [main] wire -  << "z[0xbf][0x1e][0xd6][0xc8][0xbf][0x93]Ze[0xa4]y[0xc2]hB[0xf3][0xef][0x94][0xd6][0xf1]w[0x1b][0x87][0xa7]?[0xe1][0x8a][0xd9][0xa8]A[0xc9][0x1e]z[0xc4]p[0xb8][0xc8][0xcc]c[0x8b][0xf8][0x92][0x92][0xb2]4[0xa7]P)[0x87][0xb0][0xb1][0xeb]H[0xbd][0xe5],[0x87][0xf9]e[0x8]Z[0x8e][0xd2][0x84]F[0x1a][0xd1]j[0x9c]([0xb8]Y^xz[0xe5][0xa3][0xb][0xfa][0x12][0x1e][0xdb]X[0xc0][\n]"
+[DEBUG] 2023-11-08 06:39:28.355 [main] wire -  << "6@[0x89] [0xdd][0xa8][0xa0][0x96]'u[0x5]p[0x8b].[0xa8]g[0xb9][0xb6][0xf2][\n]"
+[DEBUG] 2023-11-08 06:39:28.355 [main] wire -  << "[0xd0][0x93]F[0xe][\n]"
+[DEBUG] 2023-11-08 06:39:28.356 [main] wire -  << "fs/[0x7]h[0xf][0x8c][0xfb]fI8VE[0xc3]49[0xfb]|n[0xa4][0x83][0xaa][0x1][0x8a][0x8b][0xb0][0xcc][0xf][0xc3]g[0x9]+7[0xac][0xa8]iVg[0xc8][0xe2]<[0xf5][0x17]![0xe0]g[0x9]e[0x1b]Z[0xd5][0x8c][0xd7][0xac]$[0xfb][0x83][0xb8]*[0xc1][0xd9][0xc0][0xd3]*[0xc9][\n]"
+[DEBUG] 2023-11-08 06:39:28.356 [main] wire -  << "[0x90]T.[0x19]O8[0xe5][0xdb]D[0xb4]e[0x91][0x16])[0xaf]x[0x8a][0xf7][0x1d][0xd8][0xbf][0xd3]6([0xdd][0xcb][0xcd]C[0x10][0xee])[0xda][0xf][0xb8][0xc6][0xcb][0x18][0xc2][0xce][0xe9][0xc2][0x9e][0x1c][0x85][0xd2]`<[0x8a][0xfb][0xc3]`m[0xaf]:[0xb][0xb4]"[0xe4][0xb6]"
+[DEBUG] 2023-11-08 06:39:28.356 [main] wire -  << "UZ[0x2][0x92][0x90][0xdc][0xd9][0x1e]o[0xaf][0x8a][0xe2][0xec]8[0x11][0xb5][0xcd][0xa0][0x9f][0x8a][0x15]x[0xa7][0x16]>[0x80][0xd4]v[0xca][0xc0]dA[0x8e][0xd3][0xc5]x|C[0xf3]:[0xab][0xea]t{[0x11]z5[0xa4]U.<6[0x8][0x14][0xf6][0xe][0x93][0xa2][0x8e]R[0x14][0xe8]N[0x9a][0xb8][0x85][0xec][0x86]LqK[0x1c]`[0xa9][0x85][0xd9][0xcd]b[0x87][0xc1][0xc2][0xe1][0x80]_[0xdc][0xe1][0xc6][0x2]C~[0xf6][0x13][0x90]ig`w[0x0][0x8e][0x17][0xde]`[0xd0]I[0xcb][0x80][0xc4][0x9d][0x8d][0x17][0xe3]5[0xcf][0xd2]E[0x81][0xae]#V[0x98][0xae][0xfc]'5\[0xdb][0x8a]wB#[0x5][0xef][0xd6][0xc0][0xdd][0xdd]A[0xa5]A[0x84][0xc7]U[0xc2]bh[0xfc][0x93][0x9a][0xa6]S[0xc2][0xfe][0x88]Tgg[0x13][0xdc][0xb][0xa9][0xf3][0x12][0x9f][0x1b][0xaf]z|<.[0xcd][0xde][0xce][0xe]lvh[0x94][0x81]N[0x1],\*[0xd0][0xef][0x0]OE[0xdc][0xd8]2V[0xb2][0xc][0x2][0xbc][0x9a][0xca][0x4][0x10]~[0xb3][0xbc][0x94]g[0xe9]_[0xec][0xc2][[0xe1][0xaf]U[0x9d][0xd7][0xb4][0xba]*[0xfc][0x15][0xed][0xfb][0xfd]3[0xbc]/[0x89][0x8f][0x5][0x0][0x0]"
+[DEBUG] 2023-11-08 06:39:28.356 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.356 [main] wire -  << "0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.357 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.357 [main] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-11-08 06:39:28.358 [main] ReportManager - Response status code: "200", status line: "HTTP/1.1 200 OK"
+[INFO ] 2023-11-08 06:39:28.360 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-11-08 06:39:28.362 [main] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b590d21
+[DEBUG] 2023-11-08 06:39:28.362 [main] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-11-08 06:39:28.410 [main] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-11-08 06:39:28.414 [main] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-11-08 06:39:28.422 [main] ReportManager - {
+[INFO ] 2023-11-08 06:39:28.422 [main] ReportManager -     "user": {
+[INFO ] 2023-11-08 06:39:28.422 [main] ReportManager -         "onboard_request": null,
+[INFO ] 2023-11-08 06:39:28.422 [main] ReportManager -         "merchant": {
+[INFO ] 2023-11-08 06:39:28.423 [main] ReportManager -             "order": null,
+[INFO ] 2023-11-08 06:39:28.423 [main] ReportManager -             "id": "6d0423e8-72b9-4d26-a0a3-c835487381a5",
+[INFO ] 2023-11-08 06:39:28.423 [main] ReportManager -             "reference": "ME000001",
+[INFO ] 2023-11-08 06:39:28.423 [main] ReportManager -             "business_type": 2,
+[INFO ] 2023-11-08 06:39:28.423 [main] ReportManager -             "business_reference": "111111",
+[INFO ] 2023-11-08 06:39:28.424 [main] ReportManager -             "solo_id": null,
+[INFO ] 2023-11-08 06:39:28.424 [main] ReportManager -             "business_name": "FOODICS",
+[INFO ] 2023-11-08 06:39:28.424 [main] ReportManager -             "business_name_localized": "￙ﾁ￙ﾈ￘ﾯ￙ﾃ￘ﾳ",
+[INFO ] 2023-11-08 06:39:28.424 [main] ReportManager -             "commercial_registration": "2051049000",
+[INFO ] 2023-11-08 06:39:28.425 [main] ReportManager -             "commercial_registration_expiration": "2024-10-04T00:00:00.000000Z",
+[INFO ] 2023-11-08 06:39:28.425 [main] ReportManager -             "unified_national_number": "7012409004",
+[INFO ] 2023-11-08 06:39:28.425 [main] ReportManager -             "mcc": 5814,
+[INFO ] 2023-11-08 06:39:28.425 [main] ReportManager -             "settlement_enabled": true,
+[INFO ] 2023-11-08 06:39:28.426 [main] ReportManager -             "settlement_disabled_reason": null,
+[INFO ] 2023-11-08 06:39:28.426 [main] ReportManager -             "total_terminals": 92,
+[INFO ] 2023-11-08 06:39:28.426 [main] ReportManager -             "active_terminals": 89,
+[INFO ] 2023-11-08 06:39:28.426 [main] ReportManager -             "beneficiary_name": null,
+[INFO ] 2023-11-08 06:39:28.427 [main] ReportManager -             "is_active": true,
+[INFO ] 2023-11-08 06:39:28.427 [main] ReportManager -             "is_approved": true,
+[INFO ] 2023-11-08 06:39:28.427 [main] ReportManager -             "created_at": "2020-03-17 16:03:31",
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -             "updated_at": "2023-11-01 09:18:17"
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -         },
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -         "id": "9a81f829-36a3-4e18-8085-ab7626289821",
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -         "name": "Clotilde Stark",
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -         "national_id": "1000080000",
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -         "email": "merchant@foodics.com",
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -         "mobile_dial_code": "966",
+[INFO ] 2023-11-08 06:39:28.428 [main] ReportManager -         "mobile_number": "530859160",
+[INFO ] 2023-11-08 06:39:28.429 [main] ReportManager -         "last_login_attempt": "2023-11-08 04:39:25",
+[INFO ] 2023-11-08 06:39:28.429 [main] ReportManager -         "last_login": "2023-11-08 04:39:25",
+[INFO ] 2023-11-08 06:39:28.429 [main] ReportManager -         "birth_date": "1982-10-23",
+[INFO ] 2023-11-08 06:39:28.429 [main] ReportManager -         "gender": 1,
+[INFO ] 2023-11-08 06:39:28.429 [main] ReportManager -         "preferred_language": "ar",
+[INFO ] 2023-11-08 06:39:28.429 [main] ReportManager -         "eKYC": {
+[INFO ] 2023-11-08 06:39:28.430 [main] ReportManager -             "is_suspicious": false,
+[INFO ] 2023-11-08 06:39:28.430 [main] ReportManager -             "is_completed": false,
+[INFO ] 2023-11-08 06:39:28.430 [main] ReportManager -             "is_mobile_number_verified": false,
+[INFO ] 2023-11-08 06:39:28.430 [main] ReportManager -             "is_national_id_verified": true,
+[INFO ] 2023-11-08 06:39:28.430 [main] ReportManager -             "is_commercial_registration_verified": true,
+[INFO ] 2023-11-08 06:39:28.430 [main] ReportManager -             "is_email_verified": false,
+[INFO ] 2023-11-08 06:39:28.431 [main] ReportManager -             "is_using_nafath": true,
+[INFO ] 2023-11-08 06:39:28.431 [main] ReportManager -             "is_nafath_skipped": false
+[INFO ] 2023-11-08 06:39:28.431 [main] ReportManager -         },
+[INFO ] 2023-11-08 06:39:28.431 [main] ReportManager -         "birth_country": 47,
+[INFO ] 2023-11-08 06:39:28.431 [main] ReportManager -         "residence_country": 47,
+[INFO ] 2023-11-08 06:39:28.432 [main] ReportManager -         "source_of_income": 14,
+[INFO ] 2023-11-08 06:39:28.432 [main] ReportManager -         "profession": 7,
+[INFO ] 2023-11-08 06:39:28.432 [main] ReportManager -         "is_owner": true,
+[INFO ] 2023-11-08 06:39:28.432 [main] ReportManager -         "is_contact_user": true,
+[INFO ] 2023-11-08 06:39:28.432 [main] ReportManager -         "is_active": true,
+[INFO ] 2023-11-08 06:39:28.432 [main] ReportManager -         "created_at": "2023-11-01 09:14:09",
+[INFO ] 2023-11-08 06:39:28.433 [main] ReportManager -         "updated_at": "2023-11-08 04:39:25"
+[INFO ] 2023-11-08 06:39:28.433 [main] ReportManager -     }
+[INFO ] 2023-11-08 06:39:28.433 [main] ReportManager - }
+[INFO ] 2023-11-08 06:39:28.435 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:28.437 [main] ReportManager - Expected "application/json", and actual "application/json"
+[INFO ] 2023-11-08 06:39:28.438 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "application/json" and Actual "application/json". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:28.468 [main] ReportManager - Expected "null", and actual "Clotilde Stark"
+[INFO ] 2023-11-08 06:39:28.469 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "null" and Actual "Clotilde Stark". Comparison Type "EQUALS". Validation Type "NEGATIVE".
+[INFO ] 2023-11-08 06:39:28.502 [main] ReportManager - Expected "Clotilde Stark", and actual "Clotilde Stark"
+[INFO ] 2023-11-08 06:39:28.503 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "Clotilde Stark" and Actual "Clotilde Stark". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:28.506 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: testSendGetCustomerInfoSuccessfully'
+[INFO ] 2023-11-08 06:39:28.507 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                             Finished Execution of Test Method: 'base.ApiTests.testSendGetCustomerInfoSuccessfully'                             
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:28.512 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                          Starting execution of load response body configuration method                                          
+                                                        'base.ApiTests.loadResponseBody'                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:28.518 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '3 out of 6' test cases in the current suite                                        
+                                        Test Method: 'base.ApiTests.testSendGetCustomerInfoWithoutToken'                                        
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[DEBUG] 2023-11-08 06:39:28.527 [main] BasicClientConnectionManager - Get connection for route {s}->https://pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:28.528 [main] DefaultClientConnectionOperator - Connecting to pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:28.691 [main] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-11-08 06:39:28.691 [main] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-11-08 06:39:28.691 [main] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:28.691 [main] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:28.691 [main] DefaultClientConnection - Sending request: GET /cp_internal/whoami HTTP/1.1
+[DEBUG] 2023-11-08 06:39:28.691 [main] wire -  >> "GET /cp_internal/whoami HTTP/1.1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.691 [main] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.691 [main] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.692 [main] wire -  >> "Host: pay2.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.692 [main] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.692 [main] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.692 [main] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.692 [main] wire -  >> "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:28.692 [main] headers - >> GET /cp_internal/whoami HTTP/1.1
+[DEBUG] 2023-11-08 06:39:28.692 [main] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:28.692 [main] headers - >> Accept: */*
+[DEBUG] 2023-11-08 06:39:28.692 [main] headers - >> Host: pay2.foodics.dev
+[DEBUG] 2023-11-08 06:39:28.692 [main] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-11-08 06:39:28.692 [main] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+[DEBUG] 2023-11-08 06:39:28.693 [main] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "HTTP/1.1 302 Found[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "Date: Wed, 08 Nov 2023 04:39:28 GMT[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "location: https://pay2-admin.foodics.dev/login[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "Cache-Control: no-cache, private[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.004 [main] wire -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "x-content-type-options: nosniff[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=x23iC85vzr3aZ4UuQ97REKlKlkJjBMdH92m1Tls8z3pmAWFEd3GTVCGEXwC1qKdnpra24QI17ymdvENMcyXqJkwr%2Fl%2Bic5nPH5IB4z5L%2FHSWIwTHLr5QmQSVNTlBD7SgHstf"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "Strict-Transport-Security: max-age=7776000; includeSubDomains; preload[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.005 [main] wire -  << "CF-RAY: 822b21e4997618a5-MRS[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.006 [main] wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.006 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.006 [main] DefaultClientConnection - Receiving response: HTTP/1.1 302 Found
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << HTTP/1.1 302 Found
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << Date: Wed, 08 Nov 2023 04:39:28 GMT
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << Content-Type: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << Transfer-Encoding: chunked
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << Connection: keep-alive
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << location: https://pay2-admin.foodics.dev/login
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << Cache-Control: no-cache, private
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << access-control-allow-origin: *
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << x-frame-options: SAMEORIGIN
+[DEBUG] 2023-11-08 06:39:29.006 [main] headers - << x-xss-protection: 1; mode=block
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << x-content-type-options: nosniff
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << CF-Cache-Status: DYNAMIC
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=x23iC85vzr3aZ4UuQ97REKlKlkJjBMdH92m1Tls8z3pmAWFEd3GTVCGEXwC1qKdnpra24QI17ymdvENMcyXqJkwr%2Fl%2Bic5nPH5IB4z5L%2FHSWIwTHLr5QmQSVNTlBD7SgHstf"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << Strict-Transport-Security: max-age=7776000; includeSubDomains; preload
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << Server: cloudflare
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << CF-RAY: 822b21e4997618a5-MRS
+[DEBUG] 2023-11-08 06:39:29.007 [main] headers - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "186[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "<!DOCTYPE html>[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "<html>[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "    <head>[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "        <meta charset="UTF-8" />[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "        <meta http-equiv="refresh" content="0;url='https://pay2-admin.foodics.dev/login'" />[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "        <title>Redirecting to https://pay2-admin.foodics.dev/login</title>[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "    </head>[\n]"
+[DEBUG] 2023-11-08 06:39:29.013 [main] wire -  << "    <body>[\n]"
+[DEBUG] 2023-11-08 06:39:29.014 [main] wire -  << "        Redirecting to <a href="https://pay2-admin.foodics.dev/login">https://pay2-admin.foodics.dev/login</a>.[\n]"
+[DEBUG] 2023-11-08 06:39:29.014 [main] wire -  << "    </body>[\n]"
+[DEBUG] 2023-11-08 06:39:29.014 [main] wire -  << "</html>"
+[DEBUG] 2023-11-08 06:39:29.014 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.014 [main] wire -  << "0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.014 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.015 [main] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@72b92ce6
+[DEBUG] 2023-11-08 06:39:29.015 [main] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[DEBUG] 2023-11-08 06:39:29.015 [main] BasicClientConnectionManager - Get connection for route {s}->https://pay2-admin.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:29.016 [main] DefaultClientConnection - Connection 0.0.0.0:64960<->172.67.152.228:443 closed
+[DEBUG] 2023-11-08 06:39:29.091 [main] DefaultClientConnectionOperator - Connecting to pay2-admin.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:29.255 [main] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-11-08 06:39:29.255 [main] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-11-08 06:39:29.255 [main] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:29.255 [main] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:29.255 [main] DefaultClientConnection - Sending request: GET /login HTTP/1.1
+[DEBUG] 2023-11-08 06:39:29.255 [main] wire -  >> "GET /login HTTP/1.1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.255 [main] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.255 [main] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.256 [main] wire -  >> "Host: pay2-admin.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.256 [main] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.256 [main] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.256 [main] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.256 [main] wire -  >> "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.256 [main] headers - >> GET /login HTTP/1.1
+[DEBUG] 2023-11-08 06:39:29.256 [main] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:29.256 [main] headers - >> Accept: */*
+[DEBUG] 2023-11-08 06:39:29.256 [main] headers - >> Host: pay2-admin.foodics.dev
+[DEBUG] 2023-11-08 06:39:29.256 [main] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-11-08 06:39:29.256 [main] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+[DEBUG] 2023-11-08 06:39:29.256 [main] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-11-08 06:39:29.568 [main] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.568 [main] wire -  << "Date: Wed, 08 Nov 2023 04:39:29 GMT[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.568 [main] wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.569 [main] wire -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.569 [main] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.569 [main] wire -  << "vary: Accept-Encoding[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.569 [main] wire -  << "Cache-Control: no-cache, private[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.569 [main] wire -  << "set-cookie: pay_session=eyJpdiI6ImtuSS9jREVIZTJ4Z0ZKSXJTU09uZ0E9PSIsInZhbHVlIjoiaXRpeU4yTDNrQVhvVnpLNjlFb2hRUUo4S29BbHlKdGxFRUprSUI3dGhBZmZwdmtZOUF5UzhlVVpWV0RIeXpDbHZWOTR5R0tTMkhyTk5sckxpdDgxS25renJLMU1pOWhoYTN0VGMwZjZtVnRWMnVjbEM2YWFnMW84WHBnMmlNazkiLCJtYWMiOiJmYmVkNjAwZWIxMWE1MTYxMDk2ODUxOWRjYTRlOWRjNzI2MTU4ZjAzNjg0Y2EyNDczN2M0YTY1MDZjYzA2OTRkIiwidGFnIjoiIn0%3D; expires=Wed, 08 Nov 2023 06:39:29 GMT; Max-Age=7200; path=/; httponly; samesite=lax[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.569 [main] wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "x-content-type-options: nosniff[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5hx6VeHMC86Lwki59OUQ641htHNyDRp2CG3Q2G82Q4V17vgHH6oRNawOZ%2BCjJuOrR3nYEHVLf8d1JKGtbfvjZMAGO2ay9Wn%2FbSwcvJeRTV%2BfnIOJICBaOJaWRedf7RZIwRVcugWBNKhn"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "Strict-Transport-Security: max-age=7776000; includeSubDomains; preload[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "CF-RAY: 822b21e81a1b0c4d-MRS[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.570 [main] wire -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.571 [main] wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.571 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.571 [main] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << Date: Wed, 08 Nov 2023 04:39:29 GMT
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << Content-Type: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << Transfer-Encoding: chunked
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << Connection: keep-alive
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << vary: Accept-Encoding
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << Cache-Control: no-cache, private
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << set-cookie: pay_session=eyJpdiI6ImtuSS9jREVIZTJ4Z0ZKSXJTU09uZ0E9PSIsInZhbHVlIjoiaXRpeU4yTDNrQVhvVnpLNjlFb2hRUUo4S29BbHlKdGxFRUprSUI3dGhBZmZwdmtZOUF5UzhlVVpWV0RIeXpDbHZWOTR5R0tTMkhyTk5sckxpdDgxS25renJLMU1pOWhoYTN0VGMwZjZtVnRWMnVjbEM2YWFnMW84WHBnMmlNazkiLCJtYWMiOiJmYmVkNjAwZWIxMWE1MTYxMDk2ODUxOWRjYTRlOWRjNzI2MTU4ZjAzNjg0Y2EyNDczN2M0YTY1MDZjYzA2OTRkIiwidGFnIjoiIn0%3D; expires=Wed, 08 Nov 2023 06:39:29 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << x-frame-options: SAMEORIGIN
+[DEBUG] 2023-11-08 06:39:29.571 [main] headers - << x-xss-protection: 1; mode=block
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << x-content-type-options: nosniff
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << CF-Cache-Status: DYNAMIC
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5hx6VeHMC86Lwki59OUQ641htHNyDRp2CG3Q2G82Q4V17vgHH6oRNawOZ%2BCjJuOrR3nYEHVLf8d1JKGtbfvjZMAGO2ay9Wn%2FbSwcvJeRTV%2BfnIOJICBaOJaWRedf7RZIwRVcugWBNKhn"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << Strict-Transport-Security: max-age=7776000; includeSubDomains; preload
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << Server: cloudflare
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << CF-RAY: 822b21e81a1b0c4d-MRS
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << Content-Encoding: gzip
+[DEBUG] 2023-11-08 06:39:29.572 [main] headers - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 2023-11-08 06:39:29.573 [main] RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:29.573 [main] wire -  << "543[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.573 [main] wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xac]Xko[0xdb]6[0x14][0xfd][0x9e]_[0xc1]r([0x9c][0x0][0xa6]%?[0xe2][0xc4][0x99][0xe5][0xa2]K[0x93]6h[0xbb]vM6l([0x8a][0x82][0x16][0xaf]$6[0x14][0xa9][0x92][0x94]m[0xad][0xeb][0x1f]([0xc9][0x8e][0xed][0xd8][0x89][0xd3]F[0x80],>[0xcf]}[0x1d][0xde]+y[0xf8][0xe4][0xc5]"
+[DEBUG] 2023-11-08 06:39:29.574 [main] wire -  << "[0xbb][0xd3][0xab][0xde][0x9f][0xa1][0xc4][0xa6]b[0xb4]7t[0xf]$[0xa8][0x8c][0x3][0xc][0x12][0xa3]PPc[0x2][0x1c])i[0x89][0xa1][0xd2] *-[0xa7][0x82]S[0x3][0xc][0x8f][0xf6][0x10]Bh[0x98][0x0]eU[0xb3][0xec]>![0x4][0xbd][0x5]K[0xd1][0x85][0x8c][0x94]N[0xa9][0xe5]J"B[0x96]V[0xa4]n6L[0xa8]6`[0x3][0x9c][0xdb][0x88][0x1c][0xe3][0xf5]iIS[0x8][0xf0][0x84][0xc3]4S[0xda]b[0x14]*iA[0xda][0x0]O9[0xb3]I[0xc0]`[0xc2]C e[0xa7][0x89][0xb8][0xe4]N+bB* h7[0x91]I4[0x97][0xd7][0xc4]*[0x12]q[0x1b]H[0xb5][0x4][0xbf]I[0x8c]Vce[0xcd][0x92][0x10][0xa9][0xb8]d0k"[0xa9]"%[0x84][0x9a]n[0x2]p[0x86][0x9e]^~8GW[0xea][0x1a]6[0x99]X[0x81][0x87]FG[0xc4][0xba]%K[0x2][0xd4][0x84]O[0xde][0xf2][0xbf][0xe8][0x5]3[0xf4][0xc2][0x9a][0xd9],[0x9f]][0xf7][0xc4][0x9b]W[0x93][0xf8]e4[0x85][0xd7]g[0xaf]_R[0x8]'~[0x1b][0x8f][0xf6]n@-[0xb7][0x2]F[0xe7]J1[0x1e][0x1a][0xf4][0x1f]z[0xce]R.[0x87]^5[0xbc][0xb7][0x1a][0x81]s%[0xad]Y[0xd5]Ipy[0x8d][0x12][\r]Q[0x80][0x13]k3s[0xe2]y.[0xae][0xa6][0x15]+[0x15][0xb][0xa0][0x19]7[0xad]P[0xa5]^h[0xcc][0xb3][0x88][0xa6]\[0x14][0xc1][0xdb]\[0xf0][0x93][0x8e][0xef]7;[0xbe][0xcf][0x9b]][0xdf]w7o[0xf6]|[0xdf][0xdd][0xbc][0xd9][0xf7]}w[0xf3][0xe6][0xb1][0xef][0xbb][0x9b]7[0x7][0xbe][0xef]n[0x8e][0x91][0x6][0x11]`c[0xb][0x1]&[0x1][0xb0]x][0xc3]K7[0x85][0xca]9[0xb3]E[0xcf][0x86][0xd3][0xc5][0xa3]Y[0xd6]r:q[0x16]tz[0xc7][0xec][0xb8][0xdb]g[0x87]G0[0x18][0x1c]w{[0x83][0xf6]q[0xcf][0x87][0xf6]Q[0x9f]2zD[0xe1][0xa8]QJm[0xdc]Hm [d[0x10]4,[0xcc][0xac][0x3]k[0xdc][0xf2][0x13][0x9d][0xf0]PI[0xb3]5|[0xa9][0xa1]Y&xX[0xf2][0x98]\q[0x1][0xa7]J([0xbd][0x14][0xcb]_[0xa2][0xf2][0xda]Ba[0x9b]@[\n]"
+[DEBUG] 2023-11-08 06:39:29.574 [main] wire -  << "$[0xbc]s[0xcf][0xd0][0xab][0xce]P[0xd5][0x19]+V,a1>Y%[0x9f][0x1b]Y[0x1c]L[0x1]34%Q.[0xc4]&[0x8a].[0xad][0xac][0x16][0xa1][0x84]3[0x6][0x12][0x89][0xf8]dJ[0xda]^[0xc7]5J[0x8c][0x94]K[0x92][0x10][0x13]j[0x0][0x89][0xc6]1[0x99]&[0xdc][0x2][0xca]H[0xb7][0xb3][0x1][0xb7][0xc4][0xe6]i[0x8c][0x8c][0xe]o[0xc8][0x94][0xd1][0xa2]C[0xa8][0xe3]d+[0xaa]8[0xda]b0[0xf1][0xa8]1`[0x8d][0xc7]S[0x1a][0x83][0xf1][0x84][0x8a][0xb9]$[0xb1][0xa6]Y[0xc2][0xc3][0x96][0x99][0xc4][0x18]y[0x1b][0x14][0xf7]J[0xab]w1ha[0xc9][0xba][0x5][0xb1][0xa6][0x5][0xe9][0xfa]([0xb3][0xe4]c[0xf7][0xe9]'T[0x9a][0xf9]%7[0x96]G[0x5][0x9]AZ[0xd0][0xdb]L[0xbb]-%[0x9b][0x91][0xb6][0x8f]Rv2%[0x87]^[0xbf][0xc2]r?.[0xb0][0x88][HM[\r][0xb9][0x9b][0x84]-R6[0xa8][0xb8][\n]"
+[DEBUG] 2023-11-08 06:39:29.574 [main] wire -  << "[0x9e][0x8e][0xc9][0xc7][0xc3][0xa7][0x9f][0x9c]"[0xae][0xd9][0xf6][0x9f]~[0xba]C[0xc2]"L[0xb])[0x1d][0xaf][[0x19][0xd1][0xf5][0xe][0xf1][0x8f]EO[0x91][0xf9]t&7[0x7][0xef][0xbe] nr[0x80];[0x9f]?a$][0xc1][0xe9][0xcd][0x84][0xdb]\[0xb6][0xf]g[0x2][0x95][0xd5]k[0xac][0x4][0xc3]u[0xfa][0xab]X[0x88]Go[0xdc]c[0xe8][0xd1][0xfb]m[0xd8]n[0xc5]#Nlb[0xb7][0xd3][0xf0]G<[0xe2]J/J[0xc1]&[0x8a][0x5][0xf8][0xfd][0xbb][0xcb]+[0x8c]h[0xe8]RX[0x80][0xbd]:[0x80][0x9f]s[0x3][0xba]>[0x91]xU[0xee]=[0xe8][0x15][0xb1]d[0x96][0xdb]*[0xbd][0xe2]*[0xab][0xe0]:[0xe5]}[0xae][0xab][0xdd][0x84][0x8a][0x1c][0x1e]R[0xeb]~Bf-[0x92][0xb3][0x0]k[0x8]if[0xc3][0x84][0xce][0xf5][0xf0][0xee] [0xe1]&[0xdf][0xa7]c[0xd2][0xdf][0xc1][0x3]U[0xb1][0xa2]cp[0xc][0xd3][0x1][0x86][0x94]r[0x81][0x97]@[0xba]h,Tx[0x8d]J"[0xce]D[0xf5],[0xd3]R[0xdf][0xf7][0xf1][0xe8][0xcc][0xad]G[0xcf][0x19][0xd3]`[0xcc][0xd0]+[0x91]v[0x94][0xba][0xec][0x87]Zl[0xe5][0x86][0xba]S{~[0xa1]L[0xb5]>+H[0xb7]RB[0xc4][0x18]e[0x82][0x86][0x90]([0xc1]@[0x7][0xf8][0xac]<y[0xe5]nD+[0x8d]v[0xe1][0xc0]='[0xfc][0x11][0x9d][0x9b]Qc[0xa6]J[0xb3][0x7][0xf8][0xf7]}[0xbd][0xe5][0xc7]]{#[0xb4][0xf2][0xee]-%6[0xf9]u[0x93]c[0xb][0x95]k[0xb4][0xd8][0xfd][0x88][0x8e]u[0xaf]0[0xf7][0x15][0x12][0x90]l[0xe1][0xa2]tL[0xda][0x1d][0x94]jBs[0xab]PjI[0xf]%j[0x2][0xfa]$[0x97][0xc][0xb4][0xe0][0x12]v[0x8d][0xcd]"[0xe5].[0x92][0xea][0xdc]>O[0xc3][0xd7][0x1c][0x8c][0xc5][0xa3]s[0xa5]ce[0xd1]<[0x10][0xe8][0xd9][0x9d][0xb9]v[0xd5][0xf8][0xf2][0x85][0xec]A[0xcc][0xda]9u[0xed]z[\r][0xc7][0xb9][0xb5]J[0x96]I[0xc5][0xe4][0xe3][0x94][R[0x8d][0xe0][0x9a][0x1f][0xd5][0xe0][0x82][\r]c+I[0xa6]yJu[0xb1]px[0xc9][0x8d]Z3[0xc4][0xb8][0xa1]c[0x1]l^x*[0xb4][0xc7]Q[0xb8][0xa6][0xcc][0xdd]K\U[0xb8][0xb7][0xd8]=`j[0xc3][0xf0][0xda][0xd0][0xb6][0x8d]&[0xd4]<[0xb3][0xab][0xaf] [0xd3][0xe9][0xb4][0xfe][0x16])[0xbf]C[0x16]y[0xdc][0xa3][0x19]o}1[0xcf]48[0x92][0x6][0xfd]7[0xe1][0xf4]l`[0xe0][0xb9][0xbb]N?[0xf4]^[0xfd][0x1b][0xf5][0xfe]<[0xff][0xbd][0x8][0xff]>[0xfe]C[\r]T[0xe7]2[0x9c]^[0xbe][0x18]t[\r][0x1e][\r][0xbd]J[0xcc][0x92]:[0xf5][0xc0][0x84]j4[0xc7][0xbf][0xe4][0x16]^C[0x81][0x2][0xd4][0xd8][0x15][0xba][0xb1][0x1d]y1[0x10]/[0xf4]oi[0xa0][0xac][0xd8][0x8f]rYV[0xe0][0xfd][0x3][0xf4]m[0xc5]!K+a[0x6]anaM[0xb7]&[0xfa]VU[0xef][0x13][0xd4]HT[\n]"
+[DEBUG] 2023-11-08 06:39:29.574 [main] wire -  << "[0x19][0x8d][0xa1][0xf1][0xfd][0xa0]e[0x13][0x90]7[0xb8]e[0xb9][[0x7]w[0x17]Sa[0x9e][0x82][0xb4][0xad][0x18][0xec][0x99][0x0][0xd7][0xfc][0xad][0xb8]`[0xfb][0x8d][0xb5]R[0xd9]8h[0x95][0x95][0x3][0x5][0xa8][0xec][0xff][0xba]3[0xd2][0xda][0xf9]8h[0xcd][0xa9][0x8e][0x2][0x14]Qa`[0x15][0xea][0xfb][0xc1]M[0xb9]}[0xdb][0xad][0xd5]h[0xf5]I4[0xf4][0xca]?)[0xfe][0x7][0x0][0x0][0xff][0xff]"
+[DEBUG] 2023-11-08 06:39:29.574 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.575 [main] wire -  << "b[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.575 [main] wire -  << "[0xe3][0x2][0x0][0x19]%[0x8e][0x80][0xb5][0x10][0x0][0x0]"
+[DEBUG] 2023-11-08 06:39:29.575 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.575 [main] wire -  << "0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.575 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:29.575 [main] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-11-08 06:39:29.596 [main] ReportManager - Response status code: "200", status line: "HTTP/1.1 200 OK"
+[INFO ] 2023-11-08 06:39:29.598 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-11-08 06:39:29.600 [main] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1aaab222
+[DEBUG] 2023-11-08 06:39:29.600 [main] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-11-08 06:39:29.621 [main] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-11-08 06:39:29.623 [main] ReportManager - Successfully created attachment 'API Response - Body'
+[INFO ] 2023-11-08 06:39:29.812 [main] ReportManager - <html class="font-sans antialiased" lang="en">
+[INFO ] 2023-11-08 06:39:29.812 [main] ReportManager -   <head>
+[INFO ] 2023-11-08 06:39:29.812 [main] ReportManager -     <meta charset="utf-8"/>
+[INFO ] 2023-11-08 06:39:29.812 [main] ReportManager -     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+[INFO ] 2023-11-08 06:39:29.812 [main] ReportManager -     <meta name="robots" content="noindex, nofollow"/>
+[INFO ] 2023-11-08 06:39:29.813 [main] ReportManager -     <meta name="csrf-token" content="ovivMiVaIdsaItsxxuxk4lLHvgGfweKEKGaecv01"/>
+[INFO ] 2023-11-08 06:39:29.813 [main] ReportManager -     <title>Foodics | Admin</title>
+[INFO ] 2023-11-08 06:39:29.813 [main] ReportManager -     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,800,800i,900,900i" rel="stylesheet"/>
+[INFO ] 2023-11-08 06:39:29.813 [main] ReportManager -     <link href="/css/app.css?id=248d836d57e9983491840e176ada7ae7" rel="stylesheet" type="text/css"/>
+[INFO ] 2023-11-08 06:39:29.813 [main] ReportManager -     <meta name="msapplication-TileColor" content="#ffffff"/>
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -     <meta name="theme-color" content="#ffffff"/>
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -   </head>
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -   <body>
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -     <div>
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -       <div class="flex w-full">
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -         <div class="w-full hidden lg:w-1/2 lg:flex min-h-screen bg-white p-32">
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -           <img src="https://pay2-admin.foodics.dev/assets/images/login-graphic.svg"/>
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -         </div>
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -         <div class="w-full lg:w-1/2 min-h-screen bg-gray-30 pt-[3%] flex justify-center">
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -           <div class="w-full px-10 md:w-5/6 flex flex-col items-center justify-center">
+[INFO ] 2023-11-08 06:39:29.814 [main] ReportManager -             <div class="w-full flex justify-center items-center mb-[5%] md:mb-[10%]">
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -               <img class="w-2/3 md:w-3/5" src="https://pay2-admin.foodics.dev/assets/images/logo-foodics.png"/>
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -             </div>
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -             <div class="text-center mb-[5%] md:mb-[10%]">
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -               <a shape="rect" class="text-4xl md:text-5xl font-bold" href="/login">Login</a>
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -             </div>
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -             <div class="w-full login mb-[5%] md:mb-[10%]">
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -               <form enctype="application/x-www-form-urlencoded" method="POST" class="w-full" action="/foodics_users/login">
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -                 <input type="hidden" name="_token" value="ovivMiVaIdsaItsxxuxk4lLHvgGfweKEKGaecv01"/>
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -                 <input type="hidden" id="recaptcha_token" name="token"/>
+[INFO ] 2023-11-08 06:39:29.815 [main] ReportManager -                 <div class="mb-6">
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                   <label for="email" class="mb-3 block text-xl text-gray-600">Email Address</label>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                   <input type="email" class="input py-3 text-lg" name="email" value="" placeholder="Enter email address"/>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                 </div>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                 <div class="mb-6">
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                   <label for="password" class="mb-3 block text-xl text-gray-600">Password</label>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                   <input type="password" class="input py-3 text-lg" name="password" placeholder="Enter your password"/>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                 </div>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                 <div class="w-full">
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                   <button disabled="disabled" type="submit" class="btn-primary text-xl py-3 w-full" id="submit-button">Login</button>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -                 </div>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -               </form>
+[INFO ] 2023-11-08 06:39:29.816 [main] ReportManager -             </div>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -           </div>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -         </div>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -       </div>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -     </div>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -     <script src="https://www.google.com/recaptcha/api.js?render=6LcwE9seAAAAACR4Hzf4UFNycX8Qo9o2ScwSD93s"/>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -     <script>var recaptchSiteKey = '6LcwE9seAAAAACR4Hzf4UFNycX8Qo9o2ScwSD93s'</script>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -     <script>
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -         grecaptcha.ready(function() {
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -             grecaptcha.execute(recaptchSiteKey, {action: 'homepage'}).then(function(token) {
+[INFO ] 2023-11-08 06:39:29.817 [main] ReportManager -                 document.getElementById('recaptcha_token').value = token;
+[INFO ] 2023-11-08 06:39:29.818 [main] ReportManager -                 document.getElementById("submit-button").disabled = false;
+[INFO ] 2023-11-08 06:39:29.818 [main] ReportManager -             });
+[INFO ] 2023-11-08 06:39:29.818 [main] ReportManager -         });
+[INFO ] 2023-11-08 06:39:29.818 [main] ReportManager -         </script>
+[INFO ] 2023-11-08 06:39:29.818 [main] ReportManager -   </body>
+[INFO ] 2023-11-08 06:39:29.818 [main] ReportManager - </html>
+[INFO ] 2023-11-08 06:39:29.820 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:29.822 [main] ReportManager - Expected "text/html; charset=UTF-8", and actual "text/html; charset=UTF-8"
+[INFO ] 2023-11-08 06:39:29.823 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "text/html; charset=UTF-8" and Actual "text/html; charset=UTF-8". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:29.826 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: testSendGetCustomerInfoWithoutToken'
+[INFO ] 2023-11-08 06:39:29.826 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                             Finished Execution of Test Method: 'base.ApiTests.testSendGetCustomerInfoWithoutToken'                             
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:29.830 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                          Starting execution of load response body configuration method                                          
+                                                        'base.ApiTests.loadResponseBody'                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:29.835 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '4 out of 6' test cases in the current suite                                        
+                                            Test Method: 'base.ApiTests.testCustomerLoginWithoutBody'                                            
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[DEBUG] 2023-11-08 06:39:29.845 [main] BasicClientConnectionManager - Get connection for route {s}->https://pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:29.846 [main] DefaultClientConnectionOperator - Connecting to pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:30.016 [main] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-11-08 06:39:30.016 [main] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-11-08 06:39:30.016 [main] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:30.016 [main] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:30.016 [main] DefaultClientConnection - Sending request: POST /cp_internal/login HTTP/1.1
+[DEBUG] 2023-11-08 06:39:30.016 [main] wire -  >> "POST /cp_internal/login HTTP/1.1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "Content-Length: 0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "Host: pay2.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] wire -  >> "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.017 [main] headers - >> POST /cp_internal/login HTTP/1.1
+[DEBUG] 2023-11-08 06:39:30.017 [main] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:30.017 [main] headers - >> Accept: */*
+[DEBUG] 2023-11-08 06:39:30.017 [main] headers - >> Content-Length: 0
+[DEBUG] 2023-11-08 06:39:30.017 [main] headers - >> Host: pay2.foodics.dev
+[DEBUG] 2023-11-08 06:39:30.018 [main] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-11-08 06:39:30.018 [main] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+[DEBUG] 2023-11-08 06:39:30.018 [main] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-11-08 06:39:30.200 [main] wire -  << "HTTP/1.1 302 Found[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.200 [main] wire -  << "Date: Wed, 08 Nov 2023 04:39:30 GMT[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.200 [main] wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.200 [main] wire -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.200 [main] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "location: https://pay2.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "Cache-Control: no-cache, private[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "x-ratelimit-limit: 60[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "x-ratelimit-remaining: 59[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "x-content-type-options: nosniff[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BL2IHZJB8w350h%2BxjwR6kxNFEsXzynXe64BXPOucelBLM6HZ9JE8LCY2vrO%2FKkzzC1fNejhhhdmbMhQn4lsJagBABruGFrD7Wujq4lV1xT7O4ByxcdQnlqjxtkC7Q%2BOypfE%2B"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "Strict-Transport-Security: max-age=7776000; includeSubDomains; preload[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "CF-RAY: 822b21ecd9d318a2-MRS[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.201 [main] DefaultClientConnection - Receiving response: HTTP/1.1 302 Found
+[DEBUG] 2023-11-08 06:39:30.201 [main] headers - << HTTP/1.1 302 Found
+[DEBUG] 2023-11-08 06:39:30.201 [main] headers - << Date: Wed, 08 Nov 2023 04:39:30 GMT
+[DEBUG] 2023-11-08 06:39:30.201 [main] headers - << Content-Type: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:30.201 [main] headers - << Transfer-Encoding: chunked
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << Connection: keep-alive
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << location: https://pay2.foodics.dev
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << Cache-Control: no-cache, private
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << x-ratelimit-limit: 60
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << x-ratelimit-remaining: 59
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << access-control-allow-origin: *
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << x-frame-options: SAMEORIGIN
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << x-xss-protection: 1; mode=block
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << x-content-type-options: nosniff
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << CF-Cache-Status: DYNAMIC
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BL2IHZJB8w350h%2BxjwR6kxNFEsXzynXe64BXPOucelBLM6HZ9JE8LCY2vrO%2FKkzzC1fNejhhhdmbMhQn4lsJagBABruGFrD7Wujq4lV1xT7O4ByxcdQnlqjxtkC7Q%2BOypfE%2B"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << Strict-Transport-Security: max-age=7776000; includeSubDomains; preload
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << Server: cloudflare
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << CF-RAY: 822b21ecd9d318a2-MRS
+[DEBUG] 2023-11-08 06:39:30.202 [main] headers - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 2023-11-08 06:39:30.202 [main] RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:30.202 [main] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-11-08 06:39:30.203 [main] ReportManager - Response status code: "302", status line: "HTTP/1.1 302 Found"
+[INFO ] 2023-11-08 06:39:30.205 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "302" and Actual "302". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "156[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "<!DOCTYPE html>[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "<html>[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "    <head>[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "        <meta charset="UTF-8" />[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "        <meta http-equiv="refresh" content="0;url='https://pay2.foodics.dev'" />[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "        <title>Redirecting to https://pay2.foodics.dev</title>[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "    </head>[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "    <body>[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "        Redirecting to <a href="https://pay2.foodics.dev">https://pay2.foodics.dev</a>.[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "    </body>[\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "</html>"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.206 [main] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1f7b4952
+[DEBUG] 2023-11-08 06:39:30.206 [main] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-11-08 06:39:30.209 [main] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-11-08 06:39:30.211 [main] ReportManager - Successfully created attachment 'API Response - Body'
+[INFO ] 2023-11-08 06:39:30.213 [main] ReportManager - <html>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -   <head>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -     <meta charset="UTF-8"/>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -     <meta http-equiv="refresh" content="0;url='https://pay2.foodics.dev'"/>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -     <title>Redirecting to https://pay2.foodics.dev</title>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -   </head>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -   <body>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -         Redirecting to     <a shape="rect" href="https://pay2.foodics.dev">https://pay2.foodics.dev</a>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager - .
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager -       </body>
+[INFO ] 2023-11-08 06:39:30.214 [main] ReportManager - </html>
+[INFO ] 2023-11-08 06:39:30.216 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "302" and Actual "302". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:30.217 [main] ReportManager - Expected "text/html; charset=UTF-8", and actual "text/html; charset=UTF-8"
+[INFO ] 2023-11-08 06:39:30.218 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "text/html; charset=UTF-8" and Actual "text/html; charset=UTF-8". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:30.220 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: testCustomerLoginWithoutBody'
+[INFO ] 2023-11-08 06:39:30.220 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                 Finished Execution of Test Method: 'base.ApiTests.testCustomerLoginWithoutBody'                                 
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:30.223 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                          Starting execution of load response body configuration method                                          
+                                                        'base.ApiTests.loadResponseBody'                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:30.226 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '5 out of 6' test cases in the current suite                                        
+                                      Test Method: 'base.ApiTests.testSendCustomerLoginWithInvalidEndpoint'                                      
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[DEBUG] 2023-11-08 06:39:30.236 [main] BasicClientConnectionManager - Get connection for route {s}->https://pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:30.236 [main] DefaultClientConnectionOperator - Connecting to pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:30.400 [main] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-11-08 06:39:30.400 [main] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-11-08 06:39:30.400 [main] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:30.400 [main] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:30.400 [main] DefaultClientConnection - Sending request: POST /cp_internal/login123 HTTP/1.1
+[DEBUG] 2023-11-08 06:39:30.400 [main] wire -  >> "POST /cp_internal/login123 HTTP/1.1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.400 [main] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.400 [main] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.400 [main] wire -  >> "Content-Length: 101[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.400 [main] wire -  >> "Host: pay2.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> POST /cp_internal/login123 HTTP/1.1
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> Accept: */*
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> Content-Length: 101
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> Host: pay2.foodics.dev
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+[DEBUG] 2023-11-08 06:39:30.401 [main] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> "{"email": "merchant@foodics.com",[\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> ""password": "123456",[\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> ""token": "Lyz22cfYKMetFhKQybx5HAmVimF1i0xO"[\n]"
+[DEBUG] 2023-11-08 06:39:30.401 [main] wire -  >> "}"
+[DEBUG] 2023-11-08 06:39:30.748 [main] wire -  << "HTTP/1.1 405 Method Not Allowed[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.748 [main] wire -  << "Date: Wed, 08 Nov 2023 04:39:30 GMT[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.748 [main] wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "allow: GET, HEAD[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "Cache-Control: no-cache, private[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rQlaZt6Yqe1M5yPKrX27yOAtXXp1tyo2C1PVWiHm35xdNCJ21ZsclDn2b69RjxuR9ZLQLi%2FNhHRVM8fuaqkc8aCVBIayrLmp3tbIcHqUgDL8sog3kO3hdL96ewEihO%2FitUxp"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "Strict-Transport-Security: max-age=7776000; includeSubDomains; preload[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "CF-RAY: 822b21ef3c4070ed-MRS[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.749 [main] DefaultClientConnection - Receiving response: HTTP/1.1 405 Method Not Allowed
+[DEBUG] 2023-11-08 06:39:30.749 [main] headers - << HTTP/1.1 405 Method Not Allowed
+[DEBUG] 2023-11-08 06:39:30.749 [main] headers - << Date: Wed, 08 Nov 2023 04:39:30 GMT
+[DEBUG] 2023-11-08 06:39:30.749 [main] headers - << Content-Type: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:30.749 [main] headers - << Transfer-Encoding: chunked
+[DEBUG] 2023-11-08 06:39:30.749 [main] headers - << Connection: keep-alive
+[DEBUG] 2023-11-08 06:39:30.749 [main] headers - << allow: GET, HEAD
+[DEBUG] 2023-11-08 06:39:30.749 [main] headers - << Cache-Control: no-cache, private
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << access-control-allow-origin: *
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << CF-Cache-Status: DYNAMIC
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rQlaZt6Yqe1M5yPKrX27yOAtXXp1tyo2C1PVWiHm35xdNCJ21ZsclDn2b69RjxuR9ZLQLi%2FNhHRVM8fuaqkc8aCVBIayrLmp3tbIcHqUgDL8sog3kO3hdL96ewEihO%2FitUxp"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << Strict-Transport-Security: max-age=7776000; includeSubDomains; preload
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << X-Content-Type-Options: nosniff
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << Server: cloudflare
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << CF-RAY: 822b21ef3c4070ed-MRS
+[DEBUG] 2023-11-08 06:39:30.750 [main] headers - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 2023-11-08 06:39:30.750 [main] RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:30.750 [main] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-11-08 06:39:30.751 [main] ReportManager - Response status code: "405", status line: "HTTP/1.1 405 Method Not Allowed"
+[INFO ] 2023-11-08 06:39:30.752 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "405" and Actual "405". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-11-08 06:39:30.753 [main] wire -  << "3f1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.753 [main] wire -  << "<!DOCTYPE html>[\n]"
+[DEBUG] 2023-11-08 06:39:30.753 [main] wire -  << "<html lang="en">[\n]"
+[DEBUG] 2023-11-08 06:39:30.753 [main] wire -  << "<head>[\n]"
+[DEBUG] 2023-11-08 06:39:30.753 [main] wire -  << "    <meta charset="UTF-8" />[\n]"
+[DEBUG] 2023-11-08 06:39:30.753 [main] wire -  << "    <meta name="robots" content="noindex,nofollow,noarchive" />[\n]"
+[DEBUG] 2023-11-08 06:39:30.753 [main] wire -  << "    <title>An Error Occurred: Method Not Allowed</title>[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>[0xe2][0x9d][0x8c]</text></svg>">[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << ".container { margin: 30px; max-width: 600px; "
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "}[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "h1 { color: #dc3545; font-size: 24px; }[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "h2 { font-size: 18px; }</style>[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "</head>[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "<body>[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "<div class="container">[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "    <h1>Oops! An Error Occurred</h1>[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "    <h2>The server returned a "405 Method Not Allowed".</h2>[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "    <p>[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "        Something is broken. Please let us know what you were doing when this error occurred.[\n]"
+[DEBUG] 2023-11-08 06:39:30.754 [main] wire -  << "        We will fix it as soon as possible. Sorry for any inconvenience caused.[\n]"
+[DEBUG] 2023-11-08 06:39:30.755 [main] wire -  << "    </p>[\n]"
+[DEBUG] 2023-11-08 06:39:30.755 [main] wire -  << "</div>[\n]"
+[DEBUG] 2023-11-08 06:39:30.755 [main] wire -  << "</body>[\n]"
+[DEBUG] 2023-11-08 06:39:30.755 [main] wire -  << "</html>"
+[DEBUG] 2023-11-08 06:39:30.755 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.755 [main] wire -  << "0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.755 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:30.755 [main] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1f6b9ab7
+[DEBUG] 2023-11-08 06:39:30.755 [main] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-11-08 06:39:30.760 [main] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-11-08 06:39:30.762 [main] ReportManager - Successfully created attachment 'API Request - JSON Body'
+[INFO ] 2023-11-08 06:39:30.764 [main] ReportManager - Successfully created attachment 'API Response - Body'
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager - <html lang="en">
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager -   <head>
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager -     <meta charset="UTF-8"/>
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager -     <meta name="robots" content="noindex,nofollow,noarchive"/>
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager -     <title>An Error Occurred: Method Not Allowed</title>
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager -     <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22&gt;&lt;text y=%221.2em%22 font-size=%2296%22&gt;￢ﾝﾌ&lt;/text&gt;&lt;/svg&gt;"/>
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager -     <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager - .container { margin: 30px; max-width: 600px; }
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager - h1 { color: #dc3545; font-size: 24px; }
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager - h2 { font-size: 18px; }</style>
+[INFO ] 2023-11-08 06:39:30.768 [main] ReportManager -   </head>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -   <body>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -     <div class="container">
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -       <h1>Oops! An Error Occurred</h1>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -       <h2>The server returned a "405 Method Not Allowed".</h2>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -       <p>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -         Something is broken. Please let us know what you were doing when this error occurred.
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -         We will fix it as soon as possible. Sorry for any inconvenience caused.
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -     </p>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -     </div>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager -   </body>
+[INFO ] 2023-11-08 06:39:30.769 [main] ReportManager - </html>
+[INFO ] 2023-11-08 06:39:30.770 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "405" and Actual "405". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:30.772 [main] ReportManager - Expected "text/html; charset=UTF-8", and actual "text/html; charset=UTF-8"
+[INFO ] 2023-11-08 06:39:30.773 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "text/html; charset=UTF-8" and Actual "text/html; charset=UTF-8". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:30.775 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: testSendCustomerLoginWithInvalidEndpoint'
+[INFO ] 2023-11-08 06:39:30.776 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                           Finished Execution of Test Method: 'base.ApiTests.testSendCustomerLoginWithInvalidEndpoint'                           
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:30.782 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                          Starting execution of load response body configuration method                                          
+                                                        'base.ApiTests.loadResponseBody'                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:30.787 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '6 out of 6' test cases in the current suite                                        
+                                     Test Method: 'base.ApiTests.testSendGetCustomerInfoWithInvalidEndpoint'                                     
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[DEBUG] 2023-11-08 06:39:30.798 [main] BasicClientConnectionManager - Get connection for route {s}->https://pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:30.798 [main] DefaultClientConnectionOperator - Connecting to pay2.foodics.dev:443
+[DEBUG] 2023-11-08 06:39:31.028 [main] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-11-08 06:39:31.028 [main] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-11-08 06:39:31.028 [main] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-11-08 06:39:31.028 [main] DefaultClientConnection - Sending request: GET /cp_internal/whoami123 HTTP/1.1
+[DEBUG] 2023-11-08 06:39:31.028 [main] wire -  >> "GET /cp_internal/whoami123 HTTP/1.1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.028 [main] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.028 [main] wire -  >> "Authorization: Bearer 7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.028 [main] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.028 [main] wire -  >> "Host: pay2.foodics.dev[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.028 [main] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.029 [main] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.029 [main] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.029 [main] wire -  >> "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> GET /cp_internal/whoami123 HTTP/1.1
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> Authorization: Bearer 7284H4OzI93v5SzUIG18kf6ZuMKUggycwhmaUCVE
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> Accept: */*
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> Host: pay2.foodics.dev
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+[DEBUG] 2023-11-08 06:39:31.029 [main] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-11-08 06:39:31.315 [main] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "Date: Wed, 08 Nov 2023 04:39:31 GMT[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "vary: Accept-Encoding[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "Cache-Control: no-cache, private[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "access-control-allow-origin: *[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "set-cookie: pay_session=eyJpdiI6IkFSb3NwbnNPL1NCd3FndlpSZjJoZGc9PSIsInZhbHVlIjoiMzZ2Ni9wS3JzUCtxQW5uS28zTDZIMC9RZVduWTUwNlZsRGNzQVNTRThpMk5SRy8vaXFmSit3and3S3NocnBudCtObjRFQ2RJaUlORkE5VEM1M0dPVTBzZTZ3Y3RUWCtXQWczOVZDOFB4QndmZk9LYXFMaFRjN1krTUFRMzcxZkQiLCJtYWMiOiJjZmQwNGI1NmQ2OWEyNzQxZDM1YTNiY2FiMmJjMTk0YjE4ZGE5MGJhMTIwNDZhMjZhNGU5OTAxNzg5OTg2NmUyIiwidGFnIjoiIn0%3D; expires=Wed, 08 Nov 2023 06:39:31 GMT; Max-Age=7200; path=/; httponly; samesite=lax[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "x-frame-options: SAMEORIGIN[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "x-xss-protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.316 [main] wire -  << "x-content-type-options: nosniff[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FX7JrTPY0yqHFsCH82jvdXBTCtaUl3WJ5u18qf7hskek1WAyeujpCl2K8mxL4UbJFWHvvIg9CFlM57Mm7G8J7IFKsw9DmYnbzw4Zf3HQvCwTtk7drjuNupVUO1BJOAMotii0"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "Strict-Transport-Security: max-age=7776000; includeSubDomains; preload[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "Server: cloudflare[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "CF-RAY: 822b21f329af5fac-MRS[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.317 [main] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:31.317 [main] headers - << HTTP/1.1 200 OK
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Date: Wed, 08 Nov 2023 04:39:31 GMT
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Content-Type: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Transfer-Encoding: chunked
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Connection: keep-alive
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << vary: Accept-Encoding
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Cache-Control: no-cache, private
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << access-control-allow-origin: *
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << set-cookie: pay_session=eyJpdiI6IkFSb3NwbnNPL1NCd3FndlpSZjJoZGc9PSIsInZhbHVlIjoiMzZ2Ni9wS3JzUCtxQW5uS28zTDZIMC9RZVduWTUwNlZsRGNzQVNTRThpMk5SRy8vaXFmSit3and3S3NocnBudCtObjRFQ2RJaUlORkE5VEM1M0dPVTBzZTZ3Y3RUWCtXQWczOVZDOFB4QndmZk9LYXFMaFRjN1krTUFRMzcxZkQiLCJtYWMiOiJjZmQwNGI1NmQ2OWEyNzQxZDM1YTNiY2FiMmJjMTk0YjE4ZGE5MGJhMTIwNDZhMjZhNGU5OTAxNzg5OTg2NmUyIiwidGFnIjoiIn0%3D; expires=Wed, 08 Nov 2023 06:39:31 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << x-frame-options: SAMEORIGIN
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << x-xss-protection: 1; mode=block
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << x-content-type-options: nosniff
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << CF-Cache-Status: DYNAMIC
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FX7JrTPY0yqHFsCH82jvdXBTCtaUl3WJ5u18qf7hskek1WAyeujpCl2K8mxL4UbJFWHvvIg9CFlM57Mm7G8J7IFKsw9DmYnbzw4Zf3HQvCwTtk7drjuNupVUO1BJOAMotii0"}],"group":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Strict-Transport-Security: max-age=7776000; includeSubDomains; preload
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Server: cloudflare
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << CF-RAY: 822b21f329af5fac-MRS
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << Content-Encoding: gzip
+[DEBUG] 2023-11-08 06:39:31.318 [main] headers - << alt-svc: h3=":443"; ma=86400
+[DEBUG] 2023-11-08 06:39:31.319 [main] RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+[DEBUG] 2023-11-08 06:39:31.319 [main] wire -  << "2c1[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.319 [main] wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8c]TQo[0xdb]8[0xc]~[0xdf][0xaf][0xe0][0xfc][0xec][0xc4]J[0xe2]&N[0x17][0xa7]([0xd2][0x16][0x7]\[0xb1]k[0x9b][0xe][0xdb][0xfa][0xa6]Ht[0xcd]E[0x91]t[0x92][0x1c][0x9f][0xef][0xb0][0xff]>8i[0x10][0xb7][0xcb]"
+[DEBUG] 2023-11-08 06:39:31.319 [main] wire -  << "[0x86]3@[0xdb][0xa4][0xc5][0x8f][0x1f][0xf8][0x91][0x9e][0xbd][0xbf][0xfa]k[0xf1][0xf8][0xf5][0xee][0x1a][0xca][0xb0]Q[0xf3]w[0xb3][0xfd][0x3][0x0]`V"[0x97][0xfb][0xd7][0x9d][0xbb][0xc1][0xc0]A[0x94][0xdc]y[0xc]yT[0x85][0xa2][0x97]Eo?k[0xbe][0xc1]<[0xda][0x12][0xd6][0xd6][0xb8][0x10][0x81]0:[0xa0][0xe]yT[0x93][0xc]e.qK[0x2]{;'[0x6][0xd2][0x14][0x88][0xab][0x9e][0x17]\a>[0xf8][0x5][0x98]D/[0x1c][0xd9]@Fw[0xf0]n[0x8c][0x91]$<[0xdc][0xf1][0x6][0xc8][0x3][0x7][0xcb][0x9b][\r][0xea][0x0][0xde][0xa8][0xaa]=[0xb][0xa4][0x3]>;[0x1e]PBM[0xa1][0x84][0xc6]T[0xe][0xe]i[0xb][0xee]KB[0x7][0x97][0xd6][0xf6][0xe1]R[0x8][0xb4][0x1][0xb8]R [0xb8][0x93][0x7]([0xf][0x1e]E[0xe5]P5[0xf1][0x1e]ArR[\r][0xac][0xb8]^[0x3][0x17][0xc2]Tm[0xb5]F[0x8b][0xfe]/[0x88][0xaf][0xb1][0xa9][0x8d][0x93][0xfe]g[0xd6]1t[0xe8][0xc7][0xfb]['2|[0xe5][0xc1][0xad]y&}[0xc][0xbd]q[0xef][0x8c][0xb]\[0x1d][0xfd]E[0xe5][0x83][0xd9][0xa0][0xfb]9[0xf2]r[0xb4][0xc3][0xf6][0x14]kgV&t9kCZ[0xe2]?1hS[0x18][0xa5]L}[\n]"
+[DEBUG] 2023-11-08 06:39:31.319 [main] wire -  << "@[0x91]^C[0xe9][0xb0][0xc8][0xa3]Dx[0x9f]pk[0xfb][0xc2][0xfb][0xb][0x92][0xf9]0[0xcd]d6[0x1a][0xcb][0xb3][0x9]N[0xa7][0xd9]([0x9d][0xe][0xb2][0x94][0xe1]`2[0xe6][0x92]O8N"p[0xa8][0xf2][0xc8][0x87]F[0xa1]/[0x11]C[0xb7][0x9d][0x1d][0xdc]2[0x4][0xeb][0xcf][0x93][0xa4]0:[0xf8][0xfe][0xb3]1[0xcf][\n]"
+[DEBUG] 2023-11-08 06:39:31.320 [main] wire -  << "[0xb9]%[0xdf][0x17]f[0xd3][0xd6][0xbc]([0xf8][0x86]T[0x93][0xdf]W$[0xd6][0x9e]ky>d,[0x1e]2F[0xf1][0x88][0xb1][0xd6](N[0x19]k[0x8d][0xe2]1c[0xad]Q[0x9c]1[0xd6][0x1a][0xc5]S[0xc6]Z[0xa3]St[0x8e]|[0xde][0xf7]z[0xb0]X>[0xdc][0xc0][0xa3]Y[0xa3][0x86]^[0xef][0xb4][0xf4][0xc2][0xbb][0xa2][0x17][0xda]#[0x9d]F[0xae][0xfe][0xb6]O[0xf][0xac][0xf8]Z^[0x95][0xf2][0xfe][0x8b][0xad][0xc7][0x9f]o?[0xcb][0xdb][0xc7]l[0xf9]te[0x8c][0xd5][0xcd]j[0xc1][0xaf][0xb7][0xf6]S[0xfd][0xaa]`[0xa0][0xa0]p[0xde][0x19][0x87]Y[0xb2][0xf][0xed]W49[0xee][0xe8]led3[0x7]8[0xe6]J[0xda][0x2][0xc9]<[0xe2][0xd6]F[0xf3]Y"i[0xdb]E[0xde]o[0xd5]k-k[0xd2][0xd2][0xd4][0xfd][0xe2][0xa5]\[0xe][0xff]E[0x95]G[0x17][0x9d][0xeb]J[0xa9][0xef][0x1f][0x8e][0xc9][0xc9]![0xfb]-[0x1e]x'[0xf2]([0xf9][0xb6][0x1f][0x81]o[0xbb][0x9][0x18][0xf][0xa5]H[0x7][0xc5]$[0x9d][0xe][0xe4]j[0x95]fB[0xb0]3<[0x93][0xc3][0xe1][0xd9][0xb8][0xc0][0xf1]H[0xb4][0xe4][0xde][0xb2]y[0x5]w[0x90][0xbe][0xae][0xeb][0x17][0xe1]w[0xa2];[0x14][0xdc][0x6]Q[0xf2][0x84][jk9[0xd4][0x12]]>[0xbe][0x15][0xf5][0xf5][0xd4][0xe3]e{-[0x1e][0xd2]?[0xfe]-[0xd2]O7[0x1f][0x1b][0xf1]%[0xbb]7S3\[0x8a]zy5[0x1d][0xf9][0xdf][0xd4][0x9d]o[0xb9][0x83][0x3][0xfe][0x92][0x2][0xfe][0x89][\r][0xe4][0x10][0xfd]o[0xe8][0x13][0x1d][0x82]Y[0xb2][0x93][0xe8][0xdd],[0xd9][0xfd]d[0x0][0x0][0x0][0xff][0xff][0xe3][0x2][0x0][0xcc]%[0xc7][0xa5]|[0x5][0x0][0x0]"
+[DEBUG] 2023-11-08 06:39:31.320 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.320 [main] wire -  << "0[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.320 [main] wire -  << "[\r][\n]"
+[DEBUG] 2023-11-08 06:39:31.320 [main] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-11-08 06:39:31.322 [main] ReportManager - Response status code: "200", status line: "HTTP/1.1 200 OK"
+[INFO ] 2023-11-08 06:39:31.324 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-11-08 06:39:31.325 [main] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@31857c80
+[DEBUG] 2023-11-08 06:39:31.325 [main] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-11-08 06:39:31.329 [main] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-11-08 06:39:31.333 [main] ReportManager - Successfully created attachment 'API Response - Body'
+[INFO ] 2023-11-08 06:39:31.338 [main] ReportManager - <html>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -   <head>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <meta charset="utf-8"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <meta name="description" content="Foodics Pay is a payment solution integrated with your Foodics Cashier App. Accept all card payments securely, with daily bank account sync."/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <meta name="keywords" content="Foodics, Foodics Pay, Pay, Foodics Pay2, Foodics Pay Login, Foodics Login, Foodics Portal, Foodics Customer, Foodics Customer Portal"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <meta name="robots" content="noindex, nofollow"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <link href="/css/app.css?id=248d836d57e9983491840e176ada7ae7" rel="stylesheet"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <link href="https://fonts.googleapis.com/css?family=Quicksand:200,200i,300,300i,400,400i,600,600i,800,800i,900,900i" rel="stylesheet"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <meta name="csrf-token" content="bqpZR0fYhDhdQXpw6WLWdLT8SZDoopnybCaEvpUw"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <title>Foodics Pay</title>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -   </head>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -   <body>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <div id="app"/>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -     <script>
+[INFO ] 2023-11-08 06:39:31.339 [main] ReportManager -             window.foodics = {"user":null};
+[INFO ] 2023-11-08 06:39:31.340 [main] ReportManager -         </script>
+[INFO ] 2023-11-08 06:39:31.340 [main] ReportManager -     <script src="/js/app.js?id=62dc41f7491dbb48cc05e5d2256fe63c"/>
+[INFO ] 2023-11-08 06:39:31.340 [main] ReportManager -     <script src="https://www.google.com/recaptcha/api.js?render=6LcwE9seAAAAACR4Hzf4UFNycX8Qo9o2ScwSD93s"/>
+[INFO ] 2023-11-08 06:39:31.340 [main] ReportManager -     <script>var recaptchSiteKey = "6LcwE9seAAAAACR4Hzf4UFNycX8Qo9o2ScwSD93s"</script>
+[INFO ] 2023-11-08 06:39:31.340 [main] ReportManager -   </body>
+[INFO ] 2023-11-08 06:39:31.340 [main] ReportManager - </html>
+[INFO ] 2023-11-08 06:39:31.342 [main] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:31.345 [main] ReportManager - Expected "text/html; charset=UTF-8", and actual "text/html; charset=UTF-8"
+[INFO ] 2023-11-08 06:39:31.346 [main] ReportManager - Assertion "ValidateEquals" PASSED. Expected "text/html; charset=UTF-8" and Actual "text/html; charset=UTF-8". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-11-08 06:39:31.350 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: testSendGetCustomerInfoWithInvalidEndpoint'
+[INFO ] 2023-11-08 06:39:31.351 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                          Finished Execution of Test Method: 'base.ApiTests.testSendGetCustomerInfoWithInvalidEndpoint'                          
+                                  Test Description: 'test happy scenario to get the login and generate a token'                                  
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:31.365 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                           Starting execution of engine teardown configuration method                                           
+                                        'com.shaft.listeners.internal.ConfigurationHelper.engineTeardown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:31.367 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2023-11-08 06:39:31.368 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2023-11-08 06:39:31.370 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".
+[INFO ] 2023-11-08 06:39:31.372 [main] ReportManager - File Action "ReadFileAsByteArray" successfully performed. With the following test data "File Path: "C:\Users\AS\OneDrive\Desktop\FoodicsTask\target\logs\log4j.log"".
+[INFO ] 2023-11-08 06:39:31.373 [main] ReportManager - File Action "DeleteFile" successfully performed. With the following test data "Target File Path: "target/logs/log4j.log", file was not deleted.".
+[INFO ] 2023-11-08 06:39:31.375 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log: 20231108-063931'
+[INFO ] 2023-11-08 06:39:31.376 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "allure-results/cucumberReport.html"".
+[INFO ] 2023-11-08 06:39:31.384 [main] ReportManager - Successfully created attachment 'HTML - Checkpoints Report'
+[INFO ] 2023-11-08 06:39:31.387 [main] ReportManager - Driver is already closed.
+[INFO ] 2023-11-08 06:39:31.394 [main] ReportManager - ===============================================
+[INFO ] 2023-11-08 06:39:31.394 [main] ReportManager - Suite
+[INFO ] 2023-11-08 06:39:31.394 [main] ReportManager - Total tests run: 6, Passes: 6, Failures: 0, Skips: 0
+[INFO ] 2023-11-08 06:39:31.394 [main] ReportManager - ===============================================
+[INFO ] 2023-11-08 06:39:31.401 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative File Path: "execution-summary/ExecutionSummaryReport_08-11-2023_06-39-31-0397-am.html"".
+[INFO ] 2023-11-08 06:39:31.405 [main] ReportManager - File Action "WriteToFile" successfully performed. With the following test data "Target File Path: "C:\Users\AS\OneDrive\Desktop\FoodicsTask\execution-summary\ExecutionSummaryReport_08-11-2023_06-39-31-0397-am.html"".
+[INFO ] 2023-11-08 06:39:31.405 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                                         Test Execution Summary Results                                                         
+                                              Total Cases: 6 --> Passed: 6 | Failed: 0 | Skipped: 0                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2023-11-08 06:39:31.405 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                           This test run was powered by [1mSHAFT v.7.3.20230926[22m                                           
+                               SHAFT [1;4mis and will always be 100% FREE[22;24m for commercial and private use                               
+                                                   in compliance with the [1mMIT license[22m                                                   
+                                   Visit SHAFT's user guide [4mhttps://shafthq.github.io/[24m to learn more                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
